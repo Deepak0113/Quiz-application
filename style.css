@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*--- INDICATION STARTS ---*/
+
+.indication__container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.indication__container .indication{
+    height: 3px;
+    width: 100%;
+    background-color: #F7B812;
+}
+
+/*--- INDICATION ENDS ---*/
+
+
+/*--- QUIZ CONTAINER STARTS ---*/
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--- QUIZ CONTAINER ENDS ---*/
+
+
+/*--- QUIZ STARTS ---*/
+
+.quiz__container .quiz__number{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #F7B812;
+}
+
+.quiz__container .quiz__question{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.quiz__options .option{
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.quiz__options .option:hover {
+    background-color: #dfdfdf;
+    border: 2px solid #dfdfdf;
+}
+
+.quiz__options .option input[type="radio"]{
+    margin: 0 20px 0 0;
+}
+
+.quiz__options .option p{
+    font-size: 15px;
+}
+
+.quiz__container .quiz__controlers{
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.quiz__container .quiz__controlers{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.quiz__container .quiz__controlers button{
+    display: none;
+    padding: 7px 15px;
+    background-color: #0E8DFB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz__container #quiz__completed .heading,
+.quiz__container #quiz__completed .score,
+.quiz__container #quiz__completed .correct__answer{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.quiz__container #quiz__completed .heading{
+    margin-bottom: 30px;
+    color: #49AF41;
+}
+
+.quiz__container #quiz__completed .correct__answer{
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .quiz__container{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .quiz__container{
+        width: 50%;
+    }
+}
+
+/*--- QUIZ ENDS ---*/

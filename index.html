@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Quiz Me</title>
+</head>
+<body>
+    <div class="indication__container" id="indications">
+    </div>
+    <div class="container">
+        <div class="quiz__container">
+            <div id="quiz"></div>
+            <div id="quiz__completed"></div>
+            <div class="quiz__controlers">
+                <button id="submitBtn" onclick="handleSubmit()">Submit</button>
+                <button id="nextBtn" onclick="goToNext()">Next ⟶</button>
+                <button id="prevBtn" onclick="goToPrev()">⟵ Prev</button>                    
+                <button id="retakeBtn" onclick="retakeQuiz()">Retake quiz</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
